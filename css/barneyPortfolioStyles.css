@@ -1,0 +1,108 @@
+/* Portfolio Website Styles */
+/*NOTE: See commented out fun class style for gradient practice*/
+/* General Styles */
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	background: rgb(255, 255, 248);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(195, 195, 35);
+}
+
+img {
+	border: 1.5px solid rgb(0,0,0);
+}
+
+/* Header Wireframe Styles */
+/* NOTE: To perfectly center navbar links, need to use grid or grid-column layout */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.nav {
+	justify-items: center;
+}
+
+.nav ul{
+	display: flex;
+	padding-inline-start: 0px;
+}
+
+.nav ul li {
+	margin-right: 20px;
+	list-style: none;
+}
+
+.nav ul li a {
+	transition: color 0.2s ease; /* Transition on a:hover to color */
+}
+
+.nav ul li:last-child{
+	margin-right: 0px;
+}
+
+.hireBtn {
+	width: 70px;
+	height: 35px;
+	border-width: 1px;
+	border-radius: 10px;
+	background-color: rgb(165, 235, 170);
+	transition: background 0.2s ease; /* Transition on hireBtn:hover to background-color */
+}
+
+.hireBtn:hover {
+	background-color: rgb(192, 242, 192);
+	cursor: pointer;
+}
+
+/* Main Body Section Styles */
+main {
+	font-size: 12pt;
+}
+
+.heroWrapper {
+	display: flex;
+}
+
+/*currently no need to style heroImg*/
+
+.heroContent {
+	margin-left: 10px;
+}
+
+/*Gradient Practice (Not Suitable for Site)
+.fun {
+	width: 100%;
+	height: 7px;
+	background-image: linear-gradient(rgb(255,0,0),rgb(0,0,255));
+}*/
+
+.progressBar progress {
+	accent-color: rgb(25, 175, 200);
+}
+
+.progressBar span {
+	font-size: 11pt;
+}
+
+.eduTable td {
+	padding-right: 5px;
+	text-align: center;
+}
+
+/* Footer Section Styles */
+
+footer {
+	font-size: 11pt;
+}
